@@ -31,14 +31,16 @@
 
 ### Missing Values
 - **Missing Data Count**: timestamp:29; amount_usd:305; fee:295; ip_address: 305; ip_country:301; kyc_tier:300; device_trust_score:295
+- **Total Missing Values**: 1,830
+- **Percentage of Missingness**: 16%
 - **Handling Strategy**: To be determined during data cleaning
 
 ### Duplicate Records
-- **Total Duplicates**: 200
+- **Total Duplicated Rows**: 200
 
 ### Data Imbalance (Target Variable Distribution)
 - **Legitimate Transactions (0)**: 91%
-- **Fraudulent Transactions (1)**: 9%
+- **Fraudulent Transactions (1)**: Approx. 9%
 
 
 ## 4. Data Type Analysis
@@ -48,12 +50,13 @@
 | timestamp | object | Time variable |
 | amount_src | object | Floating value |
 
+- **Handling**: To be addressed during data cleaning
+
 
 ## 5. Key Findings
 
 ### Issues Identified
-1. **Missing Values**: less than 50% missingness in seven column.
-2. **Duplicates**: There are about 200 duplicated rows out of 11400
+1. **Missing Values**: 16% of the entire dataset is missing in seven column.
+2. **Duplicates**: There are 200 duplicated rows out of 11400
 3. **Class Imbalance**: The dataset is highly imbalance with less than 10% flagged as fraud
 4. **Data Type Issues**: timestamp and amount_src column have incorrect data types
-
